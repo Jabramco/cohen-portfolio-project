@@ -1,0 +1,191 @@
+
+
+
+/*mobile responsive begins below*/
+
+/*navigation styling*/
+
+header{
+	display:block;
+/* the below css will show the intro text for those on mobile and then later css below the media says to show jumbotron if on desktop*/
+}
+
+.navbar-brand>img {
+    width: 30px;
+    display: inline;
+}
+
+.navbar-brand {
+
+	padding: 4px 15px;
+}
+
+.jumbotron {
+
+	display: none;
+}
+
+.introduction {
+
+	display: block;
+}
+
+#carousel-example-generic {
+
+	display: none;
+}
+
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar-inverse {
+
+	background-color: #252839;
+	border-color: white;
+	color: white;
+}
+
+.navbar-inverse .navbar-brand {
+	color: white;
+}
+
+.navbar-inverse .navbar-brand:hover,
+.navbar-inverse .navbar-brand:focus {
+
+	color:#f2b632;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+
+	color:white;
+	
+}
+
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover
+.navbar-inverse .navbar-nav > .active > a:focus{
+
+	background-color: #337ab7;
+	
+
+}
+
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+
+	color:#f2b632;
+}
+
+/*gallery line*/
+
+.gallery .row div {
+
+	min-height: 166px
+}
+
+
+
+.footer {
+   background-color: #677077;
+}
+
+.btn-primary {
+
+	background-color:#337ab7;
+	border: none;
+	color:white;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active{
+
+	color: white;
+	background-color:#f2b632;
+	border: none;
+}
+
+.thumbnail img:hover {
+	transform: scale(1.1);
+}
+
+.thumbnail img {
+	transition: all 0.3s ease 0s;
+	width: 100%;
+}
+
+.thumbnail {
+	overflow: hidden;
+}
+
+p {
+
+	font-family: 'Arimo', sans-serif;
+}
+
+h1 h2 h3 h4 h5 h6 { 
+	
+	font-family: 'Titillium Web', sans-serif;
+
+
+}
+body {
+
+	padding-top: 60px;
+	padding-bottom: 100px;
+}
+
+div.c-wrapper{
+    width: 80%; /* for example */
+    margin: auto;
+}
+
+.carousel-inner > .item > img, 
+.carousel-inner > .item > a > img{
+
+margin: auto;
+}
+
+
+
+
+/*desktop features for responsive begins below*/
+
+
+@media only screen and (min-width: 650px) {
+
+
+.jumbotron {
+
+	display: block;
+}
+
+.introduction {
+
+	display: none;
+}
+#carousel-example-generic {
+
+	display: block;
+}		
+
+}

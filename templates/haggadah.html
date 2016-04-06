@@ -1,0 +1,70 @@
+{% extends "templates/base.html" %}
+{% set active_page = "haggadah" %}
+
+{% block title %}
+    HAGGADAH
+{% endblock %}
+
+{% block header %}
+   <div class="container"> 
+    <h1>Haggadah</h1>
+  </div>
+{% endblock %}
+
+{% block content %}
+
+<div class="container">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+      </ol>
+     
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="/static/img/haggadah2.jpg" alt="haggadah" width="500" height="400">
+          <div class="carousel-caption">
+              <h3>Here's an old Haggadah</h3>
+          </div>
+        </div>
+        <div class="item">
+          <img src="/static/img/haggadah3.jpg" alt="modern haggadah" width="500" height="400">
+          <div class="carousel-caption">
+              <h3>This is another Haggadah</h3>
+          </div>
+        </div>
+        <div class="item">
+          <img src="/static/img/haggadah5.jpg" alt="modern haggadah" width="500" height="400">
+          <div class="carousel-caption">
+              <h3>This is a more modern Haggadah</h3>
+          </div>
+        </div>
+      </div>
+     
+      <!-- Controls -->
+      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+      </a>
+      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+      </a>
+
+       </div>
+       </div>
+  
+        
+  
+  <br>
+        
+
+   <div class="container">  
+   	<p>
+        The Haggadah is the book that is read during the Passover seder. This book is really important and is used to pass the story of Passover down from one generation to another so that the story and its meaning stays alive. The book has stories along with prayers and pictures. During the Passover dinner everyone has their own Haggadah and is able to follow along.</p>
+
+        <p><strong>Fun fact:</strong><i>The Haggadah was originally written in Hebrew and is now translated into many different languages. Hebrew is read from right to left, so you want to make sure you open the book in the opposite direction as most people are used to.</i>
+    </p> 
+  </div>
+{% endblock %}

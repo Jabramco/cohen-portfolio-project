@@ -1,0 +1,110 @@
+<!-- 
+Change the stylesheet yourStyle.css that will 
+style the page as you want it to appear. -->
+{% extends "templates/base.html" %}
+{% set active_page = "index" %}
+
+{% block title %}
+    PASSOVER
+{% endblock %}
+
+{% block header %}
+  <div class="container"> 
+                <h2 id = "rand-message"></h2>
+          </div>
+{% endblock %}
+
+{% block content %}
+
+<div class="container">
+    <div class="jumbotron text-center">
+      <h1>Passover</h1>
+      <p>
+     Every year during the Jewish holiday Passover, families across the world come together to celebrate an amazing story and observe an ancient tradition. 
+    </p>
+      <a href="#whenspassover" data-toggle="modal" class="btn btn-primary">When's Passover?</a>
+    </div>
+
+    <div class="container">
+    <div class="introduction">
+      <h1>Passover</h1>
+      <p>
+     Every year during the Jewish holiday Passover, families across the world come together to celebrate an amazing story and observe an ancient tradition.
+    </p>
+    </div>
+  </div>
+
+
+    <div class="row">
+      <div class="col-sm-3">
+        <a href="/passover" class="thumbnail">
+          <img src="static/img/whatspassover.jpg" alt="Passover">
+        </a>
+        <h3>What's Passover?</h3>
+        <p>Passover is a fun Jewish holiday that takes place every Spring. It's a festival and lasts seven to eight days! The holiday commerates the story of a group of Israelites who freed themselves from Egyptian slavery.</p>
+        <!-- <a href="/traveling" class="btn btn-success">View</a> -->
+      </div>
+      <div class="col-sm-3">
+         <a href="/haggadah" class="thumbnail">
+          <img src="static/img/haggadah.jpg" alt="haggadah">
+        </a>
+        <h3>What's a Haggadah?</h3>
+        <p>The Haggadah is the book read during Passover. It has the story of Passover and is read every year during the Seder.</p>
+        <!-- <a href="/nabokov" class="btn btn-success">View</a> -->
+      </div>
+      <div class="col-sm-3">
+         <a href="/seder" class="thumbnail">
+          <img src="static/img/seder.jpg" alt="seder">
+        </a>
+        <h3>What's a Seder?</h3>
+        <p>The Seder is the ceremony where everyone gathers to tell the story of Passover and sing, eat, and pray together. President Obama attended a Seder!</p>
+        <!-- <a href="/cooking" class="btn btn-success">View</a> -->
+      </div>
+      <div class="col-sm-3">
+         <a href="/matzah" class="thumbnail">
+          <img src="static/img/matzah.jpg" alt="matzah">
+        </a>
+        <h3>What's Matzah?</h3>
+        <p>During Passover, you get to eat Matzah! Matzah is bread that didn't have time to rise so it is flat. It's kind of like a giant cracker. It's a huge part of the Passover story.</p>
+        <!-- <a href="/soccer" class="btn btn-success">View</a> -->
+      </div>
+    </div>
+  </div>  
+
+
+  <div class="container">
+    <h1>The Four Questions</h1>
+      <p>
+     The youngest child in the family will read (or sing) the four questions. They are called the four questions, but really are four responses to one overarching question.</p>
+   
+
+     <strong>Why is this night different from all other nights?</strong>
+
+     <ul>
+        <li>On all other nights we eat leavened products and matzah, and on this night only matzah.
+
+        </li>
+        <li>On all other nights we eat all vegetables, and on this night only bitter herbs.</li>
+        <li>On all other nights, we don’t dip our food even once, and on this night we dip twice.</li>
+        <li>On all other nights we eat sitting or reclining, and on this night we only recline.</li>
+     </ul>
+  
+      
+    </div>
+    <script>
+            console.log('running JS logic');
+            var randnum = Math.floor((Math.random() * 9) + 1);
+            console.log(randnum);
+
+            var interests = [
+            "Happy Passover!", "Happy Pesach!", "Which of the four sons are you?", "חג פסח שמח", 
+            "Do you celebrate Passover?", "What's matzah?", "What's a Haggadah?", "What are the four questions?" , "What's a seder?"
+            ];
+
+            document.getElementById("rand-message").innerHTML = interests[randnum - 1];
+        </script>
+
+
+{% endblock %}
+
+
